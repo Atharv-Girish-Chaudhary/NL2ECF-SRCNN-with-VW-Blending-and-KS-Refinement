@@ -8,10 +8,10 @@ This repository includes all the necessary scripts and a Docker-based setup for 
 
 ![Project Overview](assets/Result.png)
 
-
 ## File Requirements
 
 For training and evaluation, the following data files are expected:
+
 - **Raw HR Images:** Stored in `data/raw_image_dataset`
 - **Cropped HR Images:** Generated and stored in `data/cropped_image_dataset`
 - **Degraded LR Images:** Generated and stored in `data/low_resolution_images`
@@ -43,10 +43,13 @@ For inference using the Streamlit UI, a low-resolution image (JPG, JPEG, or PNG)
 
 1. Clone the repository and Navigate to root directory.
 2. Run the following command to build the Docker image and start the application:
+
     ```bash
     docker compose up --build
     ```
+
 3. Open your browser and navigate to
+
     ```bash
     http://localhost:8501
     ```

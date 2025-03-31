@@ -75,8 +75,10 @@ def load_model(weights="nl2ecf_srcnn_model.h5"):
         model: Loaded NL2ECF-SRCNN model.
     """
     model = NL2ECF_SRCNN_model()
+
     # Uncomment the following line to use the original model for testing.
     # model = original_SRCNN_Model()
+    
     model.load_weights(weights)
     print(f"Model loaded successfully with weights: {weights}")
     return model
